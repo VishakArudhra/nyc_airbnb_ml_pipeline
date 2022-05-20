@@ -6,9 +6,9 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 
 In this project you will build such a pipeline.
 
-Solutions, partly developed by: Vishak Arudhra 
-project git repo: https://github.com/VishakArudhra/nyc_airbnb_ml_pipeline
-project w&b: https://wandb.ai/vishak_arudhra/nyc_airbnb?workspace=user-vishak_arudhra
+* Solutions, partly developed by: Vishak Arudhra 
+* project git repo: https://github.com/VishakArudhra/nyc_airbnb_ml_pipeline
+* project w&b: https://wandb.ai/vishak_arudhra/nyc_airbnb?workspace=user-vishak_arudhra
 
 ## Table of contents
 
