@@ -31,11 +31,14 @@ def go(args):
     logger.info("dropping the outliers and making other corrections")
     min_price = args.min_price
     max_price = args.max_price
-    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    idx = df['price'].between(min_price, max_price)
     df = df[idx].copy()
 
     # Convert last_review to datetime
     df['last_review'] = pd.to_datetime(df['last_review'])
+
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
     
     logger.info("locally saving the cleaned sample")
     df.to_csv(args.output_artifact, index=False)
